@@ -15,4 +15,5 @@ services:
          - ${PWD}/cache:/cache:rw
          - ${PWD}/.git:/git:r
          - ${PWD}/config:/config:r
+         - ${PWD}/sulci:/home/jovyan/datasets/sulci:ro
       command: --NotebookApp.token='' --NotebookApp.password='' --ip='0.0.0.0'
